@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ХУРДАН КЛУБ | DIGITAL OWL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Лого хэсэг -->
+    <header>
+        <div class="logo-container">
+            <!-- Таны шинэ лого зураг -->
+            <img src="khurdan logo.jpg" alt="Хурдан Клуб Лого" class="logo-img">
+            <div class="logo-text">ХУРДАН <span>КЛУБ</span></div>
+        </div>
+    </header>
+
+    <!-- Нүүр мэдээллийн хэсэг -->
+    <section class="hero">
+        <div class="badge">DIGITAL OWL - ДИЖИТАЛ УХААНТНУУД</div>
+        <h1>Мэдээлэл Технологийн Клуб</h1>
+        <p>Ирээдүйн технологийн хөгжлийг хамтдаа бүтээцгээе. Бидэнтэй нэгдэж шинэ ур чадвар эзэмшээрэй.</p>
+    </section>
+
+    <!-- Анкет бөглөх хэсэг -->
+    <section class="form-section">
+        <h2>Элсэх хүсэлт илгээх</h2>
+        <form id="applyForm">
+            <input type="hidden" name="access_key" value="d45d0c8e-e0ba-4541-a3ee-cd0d65d786e1">
+
+            <div class="form-group">
+                <label for="name">Овог Нэр</label>
+                <input type="text" id="name" name="Овог Нэр" placeholder="Жишээ: Б.Бат-Эрдэнэ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Имэйл Хаяг</label>
+                <input type="email" id="email" name="Имэйл Хаяг" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Утасны Дугаар</label>
+                <input type="tel" id="phone" name="Утасны Дугаар" placeholder="99112233" required>
+            </div>
+
+            <div class="form-group">
+                <label for="reason">Яагаад манай клубт элсэх хүсэлтэй байгаа вэ?</label>
+                <textarea id="reason" name="Элсэх Шалтгаан" rows="4" placeholder="Сонирхол болон зорилгоо бичнэ үү..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Хүсэлт Илгээх</button>
+            <div id="status-message"></div>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
